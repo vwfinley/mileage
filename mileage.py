@@ -33,7 +33,7 @@ class Application(tk.Frame):
         tk.Label(self, text="MPG").grid(row=2, column=1)
         
         tk.Button(self, text="Calculate", command = self.calculate).grid(row=3, column=1)
-        tk.Button(self, text="Quit", command=self.master.destroy).grid(row=4, column=1)
+        tk.Button(self, text="Quit", command=self.root.destroy).grid(row=4, column=1)
 
     def calculate(self):
         self.mpg['text'] = float(self.miles.get()) / float(self.gallons.get())
